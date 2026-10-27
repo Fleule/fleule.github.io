@@ -41,6 +41,13 @@
       </div>
       <div class="note reveal"><strong>More projects coming soon.</strong> This page is designed so you can add another project card by copying one of the existing cards and updating its title, description, and link.</div>
     </section>
+    <script>
+  // Check if URL ends with ".html"
+  if (window.location.pathname.endsWith('.html')) {
+    // Redirect to the same page without ".html"
+    window.location.href = window.location.pathname.replace('.html', '');
+  }
+</script>
   </main>
   <footer><div class="wrap footer-inner"><div>© <span id="year"></span> FLEULE. Made with curiosity.</div><div class="footer-links"><a href="index.html">Home</a><a href="project.html">Projects</a></div></div></footer>
   <script src="script.js" defer></script>
