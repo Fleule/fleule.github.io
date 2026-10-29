@@ -45,3 +45,23 @@
 @media(max-width:720px){.projects-page .hero{padding:75px 0 40px}.projects-page .section{padding:25px 0 60px}.projects-page .section-head{display:block}.projects-page .section-head p{margin-top:12px}.projects-page .projects{grid-template-columns:1fr}.projects-page .card{min-height:260px}}
 
 .accent{color:var(--cyan)}
+
+
+/* Socials page */
+.socials-page .hero{padding:92px 0 45px;min-height:0;display:block;text-align:left}
+.socials-page h1{font-size:clamp(3rem,8vw,6rem);line-height:1;margin:24px 0 17px}
+.socials-page .hero p{max-width:650px;margin:0;font-size:1.05rem}
+.socials-page .section{padding:28px 0 85px}
+.socials-page .socials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.socials-page .social-card{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;min-height:220px;padding:27px;border-radius:18px;border:1px solid rgba(255,255,255,.085);background:linear-gradient(145deg,rgba(19,29,42,.94),rgba(12,17,25,.9));transition:transform .25s,border-color .25s,box-shadow .25s;isolation:isolate}
+.socials-page .social-card:before{content:"";position:absolute;z-index:-1;width:220px;height:220px;right:-80px;top:-100px;background:radial-gradient(circle,rgba(34,211,238,.15),transparent 70%);transition:transform .35s}
+.socials-page .social-card:hover{transform:translateY(-5px);border-color:rgba(34,211,238,.45);box-shadow:0 20px 60px rgba(0,0,0,.2),0 0 28px rgba(34,211,238,.06)}
+.socials-page .social-card:hover:before{transform:scale(1.35)}
+.socials-page .social-card .social-icon{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--line);border-radius:13px;color:var(--bright);background:rgba(8,145,178,.1);font-size:1.1rem;font-weight:950}
+.socials-page .social-card h2{font-size:1.35rem;letter-spacing:-.035em;margin:22px 0 7px}
+.socials-page .social-card p{color:var(--muted);font-size:.92rem;margin:0 0 22px}
+.socials-page .social-card .card-link{margin-top:auto;display:inline-flex;align-items:center;gap:8px;color:var(--bright);font-size:.87rem;font-weight:800}
+.socials-page .social-card .card-link span{transition:transform .2s}
+.socials-page .social-card:hover .card-link span{transform:translate(3px,-3px)}
+.socials-page footer{margin-top:0}
+@media(max-width:720px){.socials-page .hero{padding:75px 0 40px}.socials-page .section{padding:25px 0 60px}.socials-page .socials-grid{grid-template-columns:1fr}.socials-page .social-card{min-height:200px}}
